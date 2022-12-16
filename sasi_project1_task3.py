@@ -31,7 +31,7 @@ class Sasi_project1():
         middlename.send_keys("Kiran")
         time.sleep(3)
         lastname = driver.find_element(By.XPATH, "//input[@name='lastName']")
-        lastname.send_keys("Jaganathan")
+        lastname.send_keys("J")
         time.sleep(3)
         details = driver.find_element(By.XPATH, "//span[@class='oxd-switch-input oxd-switch-input--active --label-right']").click()
         time.sleep(3)
@@ -49,11 +49,7 @@ class Sasi_project1():
         time.sleep(3)
         save = driver.find_element(By.XPATH, "//button[@type='submit']").click()
         time.sleep(3)
-        #pim = driver.find_element(By.XPATH, "//span[text()='PIM']").click()
-        #time.sleep(3)
-        #employee_name = driver.find_element(By.XPATH, "//input[@name='']")
-        #username.send_keys("Admin")
-
+        
 
 obj=Sasi_project1()
 obj.login()
