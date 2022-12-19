@@ -30,6 +30,8 @@ class Sasi_project4():
         wait.until(expected_conditions.element_to_be_clickable(By.XPATH, Selecting_employee_name))
         driver.find_element(By.XPATH, "//span[text()='Sasi Kiran J']").click()
         time.sleep(3)
+        driver.find_element(By.XPATH, "//button[@type='submit']").click()
+        time.sleep(3)
         nickname = driver.find_element(By.XPATH, "//div/label[text()='Nickname']/following::div[1]/input")
         nickname.send_keys("Goodman")
         time.sleep(3)
