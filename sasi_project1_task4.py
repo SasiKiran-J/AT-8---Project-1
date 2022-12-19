@@ -5,7 +5,7 @@ import time
 
 class Sasi_project4():
 
-    def login(self):
+    def add(self):
 
         driver = webdriver.Firefox()
         url1 = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
@@ -32,6 +32,8 @@ class Sasi_project4():
         time.sleep(3)
         driver.find_element(By.XPATH, "//button[@type='submit']").click()
         time.sleep(3)
+        driver.find_element(By.XPATH, "//button[@class='oxd-icon-button oxd-table-cell-action-space']").click()
+        time.sleep(3)
         nickname = driver.find_element(By.XPATH, "//div/label[text()='Nickname']/following::div[1]/input")
         nickname.send_keys("Goodman")
         time.sleep(3)
@@ -40,5 +42,5 @@ class Sasi_project4():
 
 
 obj=Sasi_project4()
-obj.login()
+obj.add()
 
